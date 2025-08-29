@@ -4,10 +4,17 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   srcDir: "docs",
 
-  title: "Scribhneoir's Garden",
+  title: "Scribhneoir's Stash",
   description: "Scattered bits of scratch paper",
   cleanUrls: true,
-  base: "/digital-garden/",
+  base: "/stash/",
+
+  markdown: {
+    theme: {
+      light: "catppuccin-latte",
+      dark: "catppuccin-macchiato",
+    },
+  },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -15,6 +22,11 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Examples", link: "/markdown-examples" },
     ],
+
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2025-present Josiah McCrackenb",
+    },
 
     sidebar: [
       {
@@ -26,8 +38,6 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/scribhneoir" }],
   },
 });
