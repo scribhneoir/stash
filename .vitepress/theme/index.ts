@@ -30,8 +30,10 @@ export default {
           "en-US": "en",
         },
         homePageShowComment: false,
-        lightTheme: "catppuccin_latte",
-        darkTheme: "catppuccin_macchiato",
+        lightTheme:
+          "https://giscus.catppuccin.com/themes/latte-red-no-loader.css",
+        darkTheme:
+          "https://giscus.catppuccin.com/themes/macchiato-red-no-loader.css",
       },
       {
         frontmatter,
