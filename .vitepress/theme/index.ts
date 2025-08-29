@@ -3,6 +3,7 @@ import giscusTalk from "vitepress-plugin-comment-with-giscus";
 import { useData, useRoute } from "vitepress";
 import { toRefs } from "vue";
 import "@catppuccin/vitepress/theme/macchiato/red.css";
+import "virtual:group-icons.css";
 
 export default {
   ...DefaultTheme,

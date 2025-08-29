@@ -1,5 +1,9 @@
 import { defineConfig } from "vitepress";
 import { RSSOptions, RssPlugin } from "vitepress-plugin-rss";
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from "vitepress-plugin-group-icons";
 
 const baseUrl = "https://scribhneoir.com";
 const RSS: RSSOptions = {
@@ -22,7 +26,7 @@ const RSS: RSSOptions = {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-    plugins: [RssPlugin(RSS)],
+    plugins: [RssPlugin(RSS), groupIconVitePlugin()],
   },
 
   srcDir: "docs",
@@ -33,6 +37,9 @@ export default defineConfig({
   base: "/stash/",
 
   markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin);
+    },
     theme: {
       light: "catppuccin-latte",
       dark: "catppuccin-macchiato",
