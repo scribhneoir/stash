@@ -1,7 +1,30 @@
 import { defineConfig } from "vitepress";
+import { RSSOptions, RssPlugin } from "vitepress-plugin-rss";
+
+const baseUrl = "https://scribhneoir.com";
+const RSS: RSSOptions = {
+  title: "Scribhneoir's Stash",
+  baseUrl,
+  copyright: "Copyright (c) 2025-present, Scribhneoir",
+  description: "Scattered bits of scratch paper",
+  language: "en-US",
+  author: {
+    name: "Scribhneoir",
+    email: "scribhneoir21@gmail.com",
+    link: "https://scribhneoir.com",
+  },
+  icon: true,
+  filename: "feed.rss",
+  log: true,
+  ignoreHome: true,
+};
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [RssPlugin(RSS)],
+  },
+
   srcDir: "docs",
 
   title: "Scribhneoir's Stash",
@@ -25,7 +48,7 @@ export default defineConfig({
 
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2025-present Josiah McCrackenb",
+      copyright: "Copyright © 2025-present Josiah McCracken",
     },
 
     sidebar: [

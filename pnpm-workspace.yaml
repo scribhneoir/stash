@@ -1,0 +1,2 @@
+patchedDependencies:
+  '@sugarat/theme-shared@0.0.4': patches/@sugarat__theme-shared@0.0.4.patch

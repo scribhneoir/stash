@@ -1,0 +1,13 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index d40ef1e9b3b9f314f222e3eb14cf00659858aaee..2517e704cc9c9b31d8a819bb3dfc3430d5a0865d 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -259,7 +259,7 @@ function getVitePressPages(vpConfig) {
+   const result = [];
+   const srcDir = vpConfig.srcDir;
+   const vitepressDynamicRoutes = new Map(
+-    vpConfig?.dynamicRoutes?.routes.map((r) => [
++    vpConfig?.dynamicRoutes?.routes?.map((r) => [
+       r.fullPath,
+       slash(path2.join(srcDir, r.route))
+     ]) || []
