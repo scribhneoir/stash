@@ -3,8 +3,18 @@ share: true
 layout: home
 hero:
   name: Scribhneoir's Stash
-  actions:
-    - theme: brand
-      text: Markdown Examples
+  tagline: Scattered bits of scratch paper
+  features:
+    - icon: brand
+      title: Markdown Examples
+      details: Lorem ipsm
+      link:
+    - icon: brand
+      title: Markdown Examples
+      details: Lorem ipsm
+      link:
+    - icon: brand
+      title: Markdown Examples
+      details: Lorem ipsm
+      link:
 ---
-hello test 1 2 3
