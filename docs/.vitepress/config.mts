@@ -84,9 +84,9 @@ export default defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Sketches", link: "/sketches" },
-      { text: "Articles", link: "/articles" },
-      { text: "Tomes", link: "/tomes" },
+      { text: "Sketches", link: "/sketch" },
+      { text: "Articles", link: "/article" },
+      { text: "Tomes", link: "/tome" },
     ],
 
     footer: {
