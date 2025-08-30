@@ -45,6 +45,7 @@ export default defineConfig({
       }),
       GitChangelogMarkdownSection(),
     ],
+    publicDir: "../public",
   },
 
   vue: {
